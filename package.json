@@ -1,11 +1,13 @@
 {
-  "name": "youtube-node-testes",
+  "name": "jest-test-supertest_original",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "txt src/server.ts",
-    "test": "jest"
+    "dev": "node src/server.ts",
+    "test": "jest --coverage",
+    "unit-test": "jest ./tests/units --coverage",
+    "integration-test": "jest ./tests/integration --coverage"
   },
   "keywords": [],
   "author": "",
@@ -13,22 +15,26 @@
   "dependencies": {
     "@prisma/client": "^4.13.0",
     "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1",
     "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jest-environment-jsdom": "^29.5.0",
     "pg": "^8.10.0",
-    "tsconfig-paths-jest": "^0.0.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/code-frame": "^7.21.4",
     "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.21.5",
+    "@jest/globals": "^29.5.0",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.1",
     "@types/supertest": "^2.0.12",
     "@types/uuid": "^9.0.1",
-    "babel-jest": "^29.5.0",
     "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0",
     "prisma": "^4.13.0",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
