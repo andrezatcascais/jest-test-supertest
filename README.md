@@ -1,6 +1,6 @@
 # How to run
 
-[//]: # 1 - Install dependencies
+{% comment %}  # 1 - Install dependencies {% endcomment %}
 npm install
 > 2 - Build the development server
 npm run build
