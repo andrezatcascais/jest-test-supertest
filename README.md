@@ -1,6 +1,6 @@
 # jest-test-supertest
 
-## 1 - Install dependencies
+###  # 1 - Install dependencies
 npm install
 # 2 - Build the development server
 npm run build
